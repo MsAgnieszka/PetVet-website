@@ -1,0 +1,503 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 68px;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff5ff;
+  background-color: #0e0811;
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.67);
+  z-index: 0;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 120px;
+  height: 4px;
+  background-color: #a049db;
+}
+
+.logo-begin {
+  color: #3782e4;
+}
+
+.logo-end {
+  color: slateblue;
+}
+
+.main-card-title {
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn {
+  border-radius: 5px;
+}
+
+.btn-contact {
+  font-size: 1.8rem;
+  background-color: #2c112e;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+  border: 1px solid #525252;
+}
+
+.btn-contact a {
+  color: #fff5ff;
+  text-decoration: none;
+}
+
+.btn-contact:hover {
+  background-color: #a049db;
+}
+
+.home {
+  position: relative;
+  height: 350px;
+}
+
+.home .hero-img {
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/pets_1280_hero_img.jpg");
+  background-position: 27% 65%;
+  background-size: cover;
+  z-index: -1;
+}
+
+.home .hero-text {
+  position: absolute;
+  top: 10%;
+  margin-left: 5%;
+  z-index: 1;
+}
+
+.home .hero-text .logo .logo-begin,
+.home .hero-text .logo .logo-end {
+  font-size: 4.2rem;
+}
+
+.home .hero-text .logo img {
+  height: 80px;
+  width: 60px;
+}
+
+.home .hero-text .logo-text {
+  font-size: 1.8rem;
+  color: #a049db;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(160, 73, 219, 0.1);
+  background-color: rgba(8, 5, 10, 0.95);
+  z-index: 1000;
+}
+
+.navbar .fa-bars {
+  font-size: 3rem;
+  color: slateblue;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: #a049db;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 2rem;
+  color: slateblue;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #b886da;
+}
+
+.navbar .nav-logo .logo-begin,
+.navbar .nav-logo .logo-end {
+  font-size: 2.3rem;
+}
+
+.navbar .nav-logo img {
+  height: 48px;
+  width: 36px;
+}
+
+.aboutus .rounded {
+  border-radius: 0.7rem !important;
+}
+
+.aboutus .card-text-small {
+  font-size: 1.5rem;
+}
+
+.aboutus .card-text-img {
+  font-size: 1.8rem;
+}
+
+.aboutus .card-title-img {
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.aboutus .aboutus-info .card {
+  background-color: rgba(20, 12, 20, 0.5);
+}
+
+.aboutus .aboutus-info .card img {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.aboutus .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 15px 0;
+  background-color: rgba(20, 12, 20, 0.8);
+}
+
+.aboutus .carousel-item img {
+  height: 390px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.images-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -5;
+}
+
+.prices,
+.contact {
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.prices {
+  background-image: url("../img/cat_1280_hero_img.jpg");
+  background-position: center;
+}
+
+.prices .price-box {
+  margin: 20px 10px;
+  padding: 30px;
+  height: 500px;
+  background-color: rgba(233, 124, 243, 0.04);
+  -webkit-box-shadow: 0px 0px 10px rgba(233, 124, 243, 0.25);
+          box-shadow: 0px 0px 10px rgba(233, 124, 243, 0.25);
+  z-index: 1;
+}
+
+.prices .price-box h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #a049db;
+}
+
+.prices .price-box p,
+.prices .price-box i {
+  font-size: 1.4rem;
+}
+
+.prices .price-box i {
+  color: #dbac34;
+}
+
+.prices .price-box .price-tag {
+  font-size: 3rem;
+}
+
+.prices .price-box .btn {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 0 3px #a049db;
+          box-shadow: 0 0 3px #a049db;
+  -webkit-transition: 0.2s -webkit-transform;
+  transition: 0.2s -webkit-transform;
+  transition: 0.2s transform;
+  transition: 0.2s transform, 0.2s -webkit-transform;
+}
+
+.prices .price-box .btn-purple {
+  background-color: slateblue;
+  color: #fff5ff;
+}
+
+.prices .price-box .btn-pink {
+  background-color: #a049db;
+  color: #fff5ff;
+}
+
+.prices .price-box .btn:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.prices .price-info {
+  font-size: 1.4rem;
+}
+
+.prices .price-info a {
+  color: #9ca8b3;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.ourstrengths .strengths-item {
+  padding-bottom: 4rem;
+}
+
+.ourstrengths .strengths-item i {
+  color: #fff5ff;
+  font-size: 5rem;
+  padding-bottom: 15px;
+  text-shadow: 0 0 7px #a049db;
+}
+
+.ourstrengths .strengths-item .strengths-numbers {
+  font-size: 3rem;
+}
+
+.ourstrengths .strengths-item .strengths-text {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.contact {
+  background-image: url("../img/labrador_1280_hero_img.jpg");
+  background-position: top;
+}
+
+.contact h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact .address-info,
+.contact .contact-form,
+.contact .form-control,
+.contact .form-select,
+.contact button {
+  border: 1px solid #525252;
+}
+
+.contact .address-info p {
+  font-size: 1.4rem;
+}
+
+.contact .address-info .find-us-map .fas {
+  color: #a049db;
+  font-size: 2.8rem;
+  padding-right: 0.5em;
+}
+
+.contact .address-info .fab {
+  padding: 10px;
+  font-size: 1.8rem;
+  color: #3782e4;
+}
+
+.contact .address-info .fa-map-marked-alt,
+.contact .address-info .fab {
+  font-size: 2.2rem;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.contact .address-info .fa-phone-alt, .contact .address-info .fa-envelope {
+  font-size: 1.6rem;
+  margin-right: .5em;
+}
+
+.contact .contact-form .form-label {
+  font-size: 1.4rem;
+  color: #b6b6b6;
+}
+
+.contact .contact-form .form-control,
+.contact .contact-form .form-select {
+  font-size: 1.6rem;
+  color: #fff5ff;
+  background-color: rgba(233, 124, 243, 0.04);
+}
+
+.contact .contact-form option {
+  background-color: #140c14;
+}
+
+.contact .contact-form button {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  color: #fff5ff;
+  background-color: #2c112e;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
+.contact .contact-form button:hover {
+  background-color: #a049db;
+}
+
+footer {
+  border-top: 1px solid rgba(160, 73, 219, 0.1);
+  background-color: #08050a;
+}
+
+footer p {
+  font-size: 1.4rem;
+  color: slateblue;
+}
+
+footer .logo-begin,
+footer .logo-end {
+  font-size: 2rem;
+}
+
+footer img {
+  height: 36px;
+  width: 27px;
+}
+
+@media (min-width: 768px) {
+  nav {
+    height: 69px;
+  }
+  .prices .price-box p {
+    font-size: 1.5rem;
+  }
+  .contact {
+    background-position: 0px 120px;
+  }
+  .fa-map-marked-alt:hover,
+  .fab:hover {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  footer p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .home {
+    height: 400px;
+  }
+  .home .hero-img {
+    background-image: url("../img/pets_1920_hero_img.jpg");
+    background-position: 0 65%;
+  }
+  .contact {
+    background-position: 0px 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home {
+    height: 450px;
+  }
+  .home .hero-text {
+    top: 12%;
+    margin-left: 5%;
+  }
+  .home .hero-text .logo-text {
+    font-size: 1.8rem;
+  }
+  .navbar .navbar-nav .nav-link {
+    font-size: 2.5rem;
+  }
+  .aboutus .card .card-text-small {
+    font-size: 1.8rem;
+  }
+  .aboutus .card-text-img {
+    font-size: 2rem;
+  }
+  .aboutus .card-title-img {
+    font-size: 3rem;
+  }
+  .aboutus .carousel-item img {
+    height: 550px;
+  }
+  .prices .price-box p,
+  .prices .price-box i {
+    font-size: 1.6rem;
+  }
+  .prices .price-info {
+    font-size: 1.6rem;
+  }
+  .contact {
+    background-image: url("../img/labrador_1920_hero_img.jpg");
+    background-position: top;
+  }
+  .contact .contact-form .form-label,
+  .contact .contact-form button {
+    font-size: 1.5rem;
+  }
+  .contact .contact-form .form-control {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .home {
+    height: 550px;
+  }
+  .home .hero-text {
+    top: 12%;
+    margin-left: 5%;
+  }
+  .home .hero-text .logo-text {
+    font-size: 2.5rem;
+  }
+  .home .hero-text .logo .logo-begin,
+  .home .hero-text .logo .logo-end {
+    font-size: 6rem;
+  }
+  .home .hero-text .logo img {
+    height: 120px;
+    width: 90px;
+  }
+  .prices .price-box h3 {
+    font-size: 3.5rem;
+  }
+  .prices .price-box .price-tag {
+    font-size: 3.5rem;
+  }
+  .prices .price-box .btn {
+    font-size: 1.9rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

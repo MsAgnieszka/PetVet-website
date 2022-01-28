@@ -1,0 +1,595 @@
+
+@import 'colors';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	scroll-padding-top: 68px;
+}
+
+body {
+	position: relative;
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	color: $text-color;
+	background-color: rgb(14, 8, 17);
+}
+
+.hero-shadow {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.67);
+	z-index: 0;
+}
+
+.underline {
+	margin: 0 auto 40px;
+	width: 120px;
+	height: 4px;
+	background-color: $pink-color;
+}
+
+.logo-begin {
+	color: $blue-color;
+}
+.logo-end {
+	color: $purple-color;
+}
+
+.main-card-title {
+	font-size: 4rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.btn {
+	border-radius: 5px;
+}
+
+.btn-contact {
+	font-size: 1.8rem;
+	background-color: rgb(44, 17, 46);
+	transition: background-color .5s;
+	border: 1px solid #525252;
+
+	a {
+		color: $text-color;
+		text-decoration: none;
+	}
+}
+
+.btn-contact:hover {
+	background-color: $pink-color;
+}
+
+// ------ HEADER ------
+
+// --------------------------
+
+// SECTION HOME
+
+.home {
+	position: relative;
+	height: 350px;
+
+	.hero-img {
+		height: 100%;
+		width: 100%;
+		background-image: url('../img/pets_1280_hero_img.jpg');
+		background-position: 27% 65%;
+		background-size: cover;
+		z-index: -1;
+	}
+
+	.hero-text {
+		position: absolute;
+		top: 10%;
+		margin-left: 5%;
+		z-index: 1;
+
+		.logo {
+			.logo-begin,
+			.logo-end {
+				font-size: 4.2rem;
+			}
+
+			img {
+				height: 80px;
+				width: 60px;
+			}
+		}
+
+		.logo-text {
+			font-size: 1.8rem;
+			color: $pink-color;
+		}
+	}
+}
+
+// ------ MAIN ------
+
+// --------------------------
+
+// NAVIGATION
+
+.navbar {
+	border-bottom: 1px solid rgba(160, 73, 219, .1);
+	background-color: rgba(8, 5, 10, 0.95);
+	z-index: 1000;
+
+	.fa-bars {
+		font-size: 3rem;
+		color: $purple-color;
+	}
+
+	.navbar-nav {
+		.nav-link.active {
+			color: #a049db;
+		}
+
+		.nav-link {
+			font-size: 2rem;
+			color: $purple-color;
+			transition: color .3s;
+		}
+
+		.nav-link:hover {
+			color: #b886da;
+		}
+	}
+	.nav-logo {
+		.logo-begin,
+		.logo-end {
+			font-size: 2.3rem;
+		}
+
+		img {
+			height: 48px;
+			width: 36px;
+		}
+	}
+}
+
+// --------------------------
+
+// ABOUT US
+
+.aboutus {
+	.rounded {
+		border-radius: 0.7rem !important;
+	}
+
+	.card-text-small {
+		font-size: 1.5rem;
+	}
+
+	.card-text-img {
+		font-size: 1.8rem;
+	}
+
+	.card-title-img {
+		font-size: 2.5rem;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.aboutus-info {
+		.card {
+			background-color: rgba(20, 12, 20, 0.5);
+			img {
+				height: 250px;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.carousel-caption {
+		position: absolute;
+		left: 0;
+		right: 0;
+		padding: 15px 0;
+		background-color: rgba(20, 12, 20, 0.8);
+	}
+
+	.carousel-item {
+		img {
+			height: 390px;
+			object-fit: cover;
+		}
+	}
+}
+
+// --------------------------
+
+// SECTION PRICES
+
+.images-shadow {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: -5;
+}
+
+.prices,
+.contact {
+	position: relative;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+}
+.prices {
+	background-image: url('../img/cat_1280_hero_img.jpg');
+	background-position: center;
+
+	.price-box {
+		margin: 20px 10px;
+		padding: 30px;
+		height: 500px;
+		background-color: rgba(233, 124, 243, 0.04);
+		box-shadow: 0px 0px 10px rgba(233, 124, 243, 0.25);
+		z-index: 1;
+
+		h3 {
+			font-size: 3rem;
+			text-transform: uppercase;
+			color: $pink-color;
+		}
+
+		p,
+		i {
+			font-size: 1.4rem;
+		}
+
+		i {
+			color: #dbac34;
+		}
+
+		.price-tag {
+			font-size: 3rem;
+		}
+
+		.btn {
+			font-size: 1.6rem;
+			text-transform: uppercase;
+			
+			box-shadow: 0 0 3px $pink-color;
+			transition: 0.2s transform;
+		}
+		.btn-purple {
+			background-color: $purple-color;
+			color: $text-color;
+		}
+
+		.btn-pink {
+			background-color: $pink-color;
+			color: $text-color;
+		}
+
+		.btn:hover {
+			transform: scale(1.07);
+		}
+	}
+
+	.price-info {
+		font-size: 1.4rem;
+
+		a {
+			color: #9ca8b3;
+			text-decoration: none;
+			text-transform: capitalize;
+			font-weight: bold;
+		}
+	}
+}
+
+// --------------------------
+
+// SECTION OUR STRENGTHS
+
+.ourstrengths {
+	.strengths-item {
+		padding-bottom: 4rem;
+
+		i {
+			color: $text-color;
+			font-size: 5rem;
+			padding-bottom: 15px;
+			text-shadow: 0 0 7px $pink-color;
+		}
+
+		.strengths-numbers {
+			font-size: 3rem;
+		}
+
+		.strengths-text {
+			font-size: 1.6rem;
+			text-transform: uppercase;
+		}
+	}
+}
+
+// --------------------------
+
+// SECTION  CONTACT
+
+.contact {
+	background-image: url('../img/labrador_1280_hero_img.jpg');
+	background-position: top;
+
+	h3 {
+		font-size: 2rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	.address-info,
+	.contact-form,
+	.form-control,
+	.form-select,
+	button {
+		border: 1px solid #525252;
+	}
+
+	.address-info {
+		p {
+			font-size: 1.4rem;
+		}
+
+		.find-us-map {
+			.fas {
+				color: $pink-color;
+				font-size: 2.8rem;
+				padding-right: 0.5em;
+			}
+		}
+
+		.fab {
+			padding: 10px;
+			font-size: 1.8rem;
+			color: $blue-color;
+		}
+		.fa-map-marked-alt,
+		.fab {
+			// padding:2em;
+			font-size: 2.2rem;
+			transition: transform 0.3s;
+		}
+
+		.fa-phone-alt, .fa-envelope {
+			font-size: 1.6rem;
+			margin-right: .5em;
+		}
+	}
+	
+	.contact-form {
+		.form-label {
+			font-size: 1.4rem;
+			color: #b6b6b6;
+		}
+
+		.form-control,
+		.form-select {
+			font-size: 1.6rem;
+			color: $text-color;
+			background-color: rgba(233, 124, 243, 0.04);
+		}
+
+		option {
+			background-color: rgb(20, 12, 20);
+		}
+
+		button {
+			font-size: 1.3rem;
+			text-transform: uppercase;
+			letter-spacing: 1.3px;
+			color: $text-color;
+			
+			background-color: rgb(44, 17, 46);
+			transition: background-color .5s;
+		}
+
+		button:hover {
+			background-color: $pink-color;
+		}
+	}
+}
+
+// ------ FOOTER ------
+
+// --------------------------
+
+footer {
+	border-top: 1px solid rgba(160, 73, 219, .1);
+	background-color: rgb(8, 5, 10);
+
+	p {
+		font-size: 1.4rem;
+		color: $purple-color;
+	}
+	.logo-begin,
+	.logo-end {
+		font-size: 2rem;
+	}
+
+	img {
+		height: 36px;
+		width: 27px;
+	}
+}
+
+// ------ MEDIA QUERIES ------
+
+// --------------------------
+
+@media (min-width: 768px) {
+	nav {
+		height: 69px;
+	}
+
+	.prices {
+		.price-box {
+			p {
+				font-size: 1.5rem;
+			}
+		}
+	}
+	.contact {
+		background-position: 0px 120px;
+	}
+
+	.fa-map-marked-alt:hover,
+	.fab:hover {
+		transform: scale(1.4);
+	}
+
+	footer {
+		p {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+
+	.home {
+		height: 400px;
+
+		.hero-img {
+			background-image: url('../img/pets_1920_hero_img.jpg');
+			background-position: 0 65%;
+		}
+	}
+	.contact {
+		background-position: 0px 80px;
+	}
+
+	
+}
+
+@media (min-width: 1200px) {
+	.home {
+		height: 450px;
+
+		
+
+		.hero-text {
+			top: 12%;
+			margin-left: 5%;
+			.logo-text {
+				font-size: 1.8rem;
+			}
+		}
+	}
+
+	.navbar {
+		.navbar-nav {
+			.nav-link {
+				font-size: 2.5rem;
+			}
+		}
+	}
+
+	.aboutus {
+		.card {
+			.card-text-small {
+				font-size: 1.8rem;
+			}
+		}
+
+		.card-text-img {
+			font-size: 2rem;
+		}
+
+		.card-title-img {
+			font-size: 3rem;
+		}
+
+		.carousel-item {
+			img {
+				height: 550px;
+			}
+		}
+	}
+
+	.prices {
+		.price-box {
+			p,
+			i {
+				font-size: 1.6rem;
+			}
+		}
+
+		.price-info {
+			font-size: 1.6rem;
+		}
+	}
+	// .prices {
+	// 	background-image: url('../img/cat_1920_hero_img.jpg');}
+	.contact {
+		background-image: url('../img/labrador_1920_hero_img.jpg');
+		background-position: top;
+
+		.contact-form {
+			.form-label,
+			button {
+				font-size: 1.5rem;
+			}
+
+			.form-control {
+				font-size: 1.7rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.home {
+		height: 550px;
+
+		.hero-text {
+			top: 12%;
+			margin-left: 5%;
+			.logo-text {
+				font-size: 2.5rem;
+			}
+
+			.logo {
+				.logo-begin,
+				.logo-end {
+					font-size: 6rem;
+				}
+
+				img {
+					height: 120px;
+					width: 90px;
+				}
+			}
+		}
+	}
+
+	.prices {
+		.price-box {
+			h3 {
+				font-size: 3.5rem;
+			}
+
+			.price-tag {
+				font-size: 3.5rem;
+			}
+
+			.btn {
+				font-size: 1.9rem;
+			}
+		}
+	}
+}
