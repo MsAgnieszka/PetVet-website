@@ -1,4 +1,3 @@
-
 @import 'colors';
 
 * {
@@ -31,7 +30,7 @@ body {
 }
 
 .underline {
-	margin: 0 auto 40px;
+	margin: 1.3em auto 4em;
 	width: 120px;
 	height: 4px;
 	background-color: $pink-color;
@@ -57,7 +56,7 @@ body {
 .btn-contact {
 	font-size: 1.8rem;
 	background-color: rgb(44, 17, 46);
-	transition: background-color .5s;
+	transition: background-color 0.5s;
 	border: 1px solid #525252;
 
 	a {
@@ -121,7 +120,7 @@ body {
 // NAVIGATION
 
 .navbar {
-	border-bottom: 1px solid rgba(160, 73, 219, .1);
+	border-bottom: 1px solid rgba(160, 73, 219, 0.1);
 	background-color: rgba(8, 5, 10, 0.95);
 	z-index: 1000;
 
@@ -138,7 +137,7 @@ body {
 		.nav-link {
 			font-size: 2rem;
 			color: $purple-color;
-			transition: color .3s;
+			transition: color 0.3s;
 		}
 
 		.nav-link:hover {
@@ -195,7 +194,7 @@ body {
 		position: absolute;
 		left: 0;
 		right: 0;
-		padding: 15px 0;
+		padding: 1.5em 0;
 		background-color: rgba(20, 12, 20, 0.8);
 	}
 
@@ -232,8 +231,8 @@ body {
 	background-position: center;
 
 	.price-box {
-		margin: 20px 10px;
-		padding: 30px;
+		margin: 2em 1em;
+		padding: 3em;
 		height: 500px;
 		background-color: rgba(233, 124, 243, 0.04);
 		box-shadow: 0px 0px 10px rgba(233, 124, 243, 0.25);
@@ -261,7 +260,7 @@ body {
 		.btn {
 			font-size: 1.6rem;
 			text-transform: uppercase;
-			
+
 			box-shadow: 0 0 3px $pink-color;
 			transition: 0.2s transform;
 		}
@@ -298,13 +297,13 @@ body {
 
 .ourstrengths {
 	.strengths-item {
-		padding-bottom: 4rem;
+		padding-bottom: 4em;
 
 		i {
 			color: $text-color;
 			font-size: 5rem;
-			padding-bottom: 15px;
-			text-shadow: 0 0 7px $pink-color;
+			margin-bottom: 0.25em;
+			text-shadow: 0 0 9px $pink-color;
 		}
 
 		.strengths-numbers {
@@ -354,23 +353,23 @@ body {
 		}
 
 		.fab {
-			padding: 10px;
+			padding: 0.4em 0.8em;
 			font-size: 1.8rem;
 			color: $blue-color;
 		}
 		.fa-map-marked-alt,
 		.fab {
-			// padding:2em;
 			font-size: 2.2rem;
 			transition: transform 0.3s;
 		}
 
-		.fa-phone-alt, .fa-envelope {
+		.fa-phone-alt,
+		.fa-envelope {
 			font-size: 1.6rem;
-			margin-right: .5em;
+			margin-right: 0.5em;
 		}
 	}
-	
+
 	.contact-form {
 		.form-label {
 			font-size: 1.4rem;
@@ -388,14 +387,78 @@ body {
 			background-color: rgb(20, 12, 20);
 		}
 
+		.rodo-checkbox {
+			position: relative;
+			display: flex;
+			bottom: 0;
+			font-size: 1.3rem;
+
+			.rodo-description {
+				color: $purple-color;
+				text-decoration: underline;
+				cursor: pointer;
+			}
+
+			.rodo-infobox {
+				display: flex;
+				// display: none;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				position: absolute;
+				visibility: hidden;
+				right: 0;
+				bottom: 38px;
+				margin: 0 0.5em 0 0.5em;
+				padding: 0.5em 1em;
+				min-height: 120px;
+				min-width: 100px;
+				max-width: 380px;
+				color: rgb(200, 200, 200);
+				font-size: 1.1rem;
+				background-color: rgba(30, 26, 58, 0.85);
+				border: 1px solid black;
+				box-shadow: 0 0 15px rgba(30, 26, 58, 0.7);
+				
+				transition: visibility .3s;
+
+				p {
+					margin-bottom: 0.4em;
+				}
+				p:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			.rodo-infobox.show-rodo-infobox {
+				visibility: visible;
+			}
+
+			.checkbox-box {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 39px;
+				margin-top: 1em;
+
+				input {
+					padding: 0.5em;
+					cursor: pointer;
+				}
+
+				.rodo {
+					margin-left: 1em;
+				}
+			}
+		}
 		button {
 			font-size: 1.3rem;
 			text-transform: uppercase;
 			letter-spacing: 1.3px;
 			color: $text-color;
-			
+
 			background-color: rgb(44, 17, 46);
-			transition: background-color .5s;
+			transition: background-color 0.5s;
 		}
 
 		button:hover {
@@ -409,7 +472,7 @@ body {
 // --------------------------
 
 footer {
-	border-top: 1px solid rgba(160, 73, 219, .1);
+	border-top: 1px solid rgba(160, 73, 219, 0.1);
 	background-color: rgb(8, 5, 10);
 
 	p {
@@ -460,7 +523,6 @@ footer {
 }
 
 @media (min-width: 992px) {
-
 	.home {
 		height: 400px;
 
@@ -471,16 +533,20 @@ footer {
 	}
 	.contact {
 		background-position: 0px 80px;
-	}
 
-	
+		.contact-form {
+			.rodo-checkbox {
+				.rodo-infobox {
+					left: 100px;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) {
 	.home {
 		height: 450px;
-
-		
 
 		.hero-text {
 			top: 12%;
@@ -579,10 +645,7 @@ footer {
 
 	.prices {
 		.price-box {
-			h3 {
-				font-size: 3.5rem;
-			}
-
+			h3,
 			.price-tag {
 				font-size: 3.5rem;
 			}
